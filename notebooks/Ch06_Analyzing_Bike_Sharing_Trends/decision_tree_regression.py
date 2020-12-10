@@ -33,13 +33,13 @@ from sklearn.model_selection import train_test_split
 
 
 # plotting libraries
-import seaborn as sn
+import seaborn as sns
 import matplotlib.pyplot as plt
-import seaborn as sn
+import seaborn as sns
 
 
-sn.set_style('whitegrid')
-sn.set_context('talk')
+sns.set_style('whitegrid')
+sns.set_context('talk')
 params = {'legend.fontsize': 'x-large',
           'figure.figsize': (30, 10),
           'axes.labelsize': 'x-large',
@@ -296,7 +296,7 @@ df.head()
 
 
 fig,ax = plt.subplots()
-sn.pointplot(data=df[['mean_test_score',
+sns.pointplot(data=df[['mean_test_score',
                            'param_max_leaf_nodes',
                            'param_max_depth']],
              y='mean_test_score',x='param_max_depth',
